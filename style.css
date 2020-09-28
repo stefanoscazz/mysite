@@ -1,0 +1,365 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+     
+
+    
+}
+body{
+    color:rgb(53, 53, 53) ;
+    
+    
+
+    
+}
+/* Colore Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    
+  }
+  ::-webkit-scrollbar-track {
+    background:white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(53, 53, 53);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:rgb(95, 95, 95);
+  }
+  
+
+
+
+
+
+/*Mobile First*/
+/*Header contatti e index*/
+ .navbar-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+   
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+}
+.link li{
+    padding: 10px;
+}
+.link a:visited, .link a:link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(53, 53, 53) ;
+    }
+.link a:hover{
+    border-bottom: 1px solid grey;
+    padding-bottom: 13px; 
+}   
+a{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
+.footer{
+    background-color: rgb(53, 53, 53);
+    color:white;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 15px;
+    margin-top: 150px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.footer h3,.footer p{
+    margin-left: 100px;
+}
+    
+    
+    
+
+
+
+
+
+  
+/*Introduzione con mia foto index.html*/
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+    
+}
+.introduction img{
+    margin-top: 40px;
+    width: 80%;
+}
+/*Container-Skills index.html*/
+.container-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 30px 0 30px 0;
+    flex-direction: column;
+}
+.skills h1{
+    border-bottom: 1px solid darkgray ;
+    width: 100%;
+    text-align: center;
+    padding-bottom:20px ;
+}
+.skills p{
+    font-size: 22px;
+    padding: 10px;
+}
+.container-skills img{
+    width: 100%;
+
+}
+.span-bold{
+    
+    font-weight: bold;
+}
+/*servizi index.html*/
+.container-servizi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.servizi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-top: 40px;
+    justify-content: center;
+}
+.container-servizi h1{
+    border-bottom: 1px solid darkgray;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+.servizi p{
+    padding: 50px;
+    text-align: center;
+
+}
+.servizi h3{
+    margin-top:20px ;
+}
+.servizi a{
+    background-color:rgb(53, 53, 53) ; 
+    color: white;
+    padding: 17px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+ /* Pagina contatti */
+ .card-container{
+    display: flex;
+    flex-direction: column;            
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    color: white;
+}
+.card{
+    margin:50px;
+    width: 18rem;
+    
+    
+}
+ .card-body{
+    background-color: rgb(53, 53, 53);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(53, 53, 53);
+    border-bottom: 1px solid white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+.card-text{
+    padding: 50px;
+}
+.card-title{
+    text-align: center;
+    padding-top:20px ;
+}
+
+
+
+
+
+/*Responsive design Desktop*/
+@media only screen and (min-width: 961px) {
+    /*index.html introduzione*/
+    .link{
+        display: flex;
+        flex-direction: row;
+    }
+    .introduction{
+        flex-direction: row;
+        
+     
+    }
+    .introduction img{
+        order:1;
+        margin-right: 100px;
+        width: 500px;
+        
+    }
+    .introduction .description{
+        order:2;
+       
+        
+    }
+    /*index.html skills*/
+    .container-skills{
+        flex-direction: row;
+        margin-top: 150px;
+    }
+    .container-skills img{
+        width: 40%;
+    }
+    .skills{
+        width: 35%;
+        margin-right: 20px;
+    }
+    .skills h1{
+        width: 75%;
+    }
+    .skills p{
+        font-size: 20px;
+        padding: 30px;
+    }
+    /*index.html servizi*/
+    .section-card{
+        display: flex;
+        flex-direction:row ;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .servizi{
+        height: 400px;
+    }
+    .servizi2{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+   
+    /*contatti.html*/
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+  }
+  /*social effect*/
+.transition-animation {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  ul {
+    list-style: none;
+  }
+  ul > li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .icon {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 24px;
+    color:white ;
+    line-height: 52px;
+    text-align: center;
+    background-color:black;
+  }
+  .icon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: "";
+    box-sizing: content-box;
+  }
+  .icon-effect .icon {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .icon-effect .icon:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px #f1f1f1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  .icon-effect-1a .icon:hover {
+    background-color:white;
+    color:slategray;
+  }
+  .icon-effect-1a .icon:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
